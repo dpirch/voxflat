@@ -1,7 +1,11 @@
-See [voxflat.h](@ref voxflat.h) for the API documentation.
+# API Documentation Overview
+This is the API documentation for voxflat, a C library for reading MagicaVoxel vox files.
 
-### API Overview
-To use the voxflat library to process a MagicaVoxel .vox file, follow these steps:
+See the README at [voxflat on GitHub](https://github.com/dpirch/voxflat) for general information and how
+to build and install the library.
+
+## Usage Overview
+To read a vox file, include the [voxflat.h](@ref voxflat.h) header and do these steps:
 
 1. **Open the file**: Use @ref vxf_open_file, @ref vxf_open_stream, or @ref vxf_open_memory
    to create a @ref VxfFile instance from a file, stdio stream, or memory buffer.
@@ -13,9 +17,10 @@ To use the voxflat library to process a MagicaVoxel .vox file, follow these step
    over the voxels, retrieving their positions and colors or color palette indices.
 4. **Close the file**: Call @ref vxf_close to free the VxfFile instance and associated resources.
 
-### Example Program
-The following example opens a .vox file, retrieves its color palette, and prints the position and RGB color of each voxel.
-It assumes the file is valid and focuses on simplicity for illustrative purposes.
+See [voxflat.h](@ref voxflat.h) for the full API.
+
+## Example Program
+The following example opens a .vox file, and prints the position and RGB color of each voxel.
 
 ```c
 #include <voxflat.h>
@@ -40,3 +45,4 @@ int main() {
     vxf_close(vf);
 }
 ```
+The project also contains the **vox2qef** and **vox2txt** tools as examples with proper error handling.

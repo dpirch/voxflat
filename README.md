@@ -1,5 +1,5 @@
 # voxflat
-**voxflat** is a C library for reading [MagicaVoxel](https://ephtracy.github.io/) ".vox" files,
+**voxflat** is a C library for reading [MagicaVoxel](https://ephtracy.github.io/) vox files,
 returning the contents as a point cloud of XYZ voxel coordinates and corresponding colors.
 
 The library is written in C11; the header is also compatible with C99 and C++.
@@ -22,6 +22,8 @@ int main() {
     vxf_close(vf);
 }
 ```
+For more information on how to use the library from a grogram, see the
+Doxygen-generated [voxflat API Documentation](https://dpirch.github.io/voxflat).
 
 This project also includes two command-line programs, which also serve as examples for using the API
 with error handling:
