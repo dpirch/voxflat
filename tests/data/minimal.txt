@@ -1,0 +1,4 @@
+# X Y Z RRGGBB
+0 -1 -1 ffffff
+-1 0 -1 ffffcc
+-1 -1 0 ffff99

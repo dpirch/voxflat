@@ -1,0 +1,11 @@
+EXPORTS
+   vxf_open_file
+   vxf_open_stream
+   vxf_open_memory
+   vxf_calculate_bounds
+   vxf_count_voxels
+   vxf_get_palette
+   vxf_read_xyz_rgba
+   vxf_read_xyz_coloridx
+   vxf_close
+   vxf_error_string

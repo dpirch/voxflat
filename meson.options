@@ -1,0 +1,2 @@
+option('doc', type: 'feature', value: 'disabled', description: 'Build and install Doxygen API documentation')
+option('tools', type: 'feature', value: 'disabled', description: 'Build and install command-line tools')
